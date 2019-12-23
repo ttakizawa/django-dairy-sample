@@ -7,8 +7,8 @@
 {% block contents %}
 
 <div class="containter">
-    <div class="row">
-        <div class="my-div-style col-sm-12">
+    <div class="row ">
+        <div class="my-div-style col-xl-8">
             <form method="post">
                 {% csrf_token %}
 
@@ -16,10 +16,10 @@
 
                 {% for field in form %}
                     <div class="form-group row">
-                        <label for="{{ field.id_for_label }}" class="col-sm-4 col-form-label">
+                        <label for="{{ field.id_for_label }}" class="col-form-label col-sm-4 col-xl-4">
                             <strong>{{ field.label_tag }}</strong>
                         </label>
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 col-xl-8">
                             {{ field }}
                             {{ field.errors }}
                         </div>
