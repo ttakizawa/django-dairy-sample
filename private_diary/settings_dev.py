@@ -1,3 +1,5 @@
+import os
+
 from .settings_common import *
 
 DEBUG = True
@@ -46,3 +48,5 @@ LOGGING = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
