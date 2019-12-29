@@ -57,7 +57,7 @@ class TestDiaryCreateView(LoggedInTestCase):
         response = self.client.post(reverse_lazy('diary:diary_create'))
 
         # 必須フォームフィールドが未入力によりエラーになることを検証
-        self.assertFormError(response, 'form', 'titie', 'このフィールドは必須です。')
+        self.assertFormError(response, 'form', 'title', 'このフィールドは必須です。')
 
 
 class TestDiaryUpdateView(LoggedInTestCase):
