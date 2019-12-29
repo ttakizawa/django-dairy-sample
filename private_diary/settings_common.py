@@ -208,3 +208,7 @@ MESSAGE_TAGS = {
 }
 
 MEDIA_URL = '/media/'
+
+# バックアップバッチ用
+BACKUP_PATH = 'backup/'
+NUM_SAVED_BACKUP = 30
